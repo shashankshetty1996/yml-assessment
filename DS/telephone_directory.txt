@@ -1,0 +1,5 @@
+Question 2:
+What kind of data structures would you use for organizing (add/delete/list/search) a telephone directory? Also, specify the space and time complexities for each operation.
+
+Answer 2:
+For storing and fetching contact from telephone directory I would prefer to use "HashMap" as my data structure. Since time complexity for inserting, deleting, accessing contact will be of the order O(1). Also, space complexity which is used here will be of the order O(n). Thus as the space and time for performing operation will boost up the execution speed. All through the process depends on the hash function which is going to be used.  We could fine-tune it by the idea used behind multi-index containers is that a lot of containers store, their elements in nodes that contain pointers to other nodes like double linked lists which are used internally for implementation of HashMap. Instead of only storing the pointers for a single container, a node contains the links for several index structures that way we can achieve O(1) time complexity. The implementation is very efficient because only one memory allocation is required per element.
